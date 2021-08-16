@@ -25,12 +25,12 @@ requirements:
     - curl
   host:
     - m4
-    - perl *
+    - perl 5.*
     #  make check requirement:
     - {{ compiler('c') }}
   run:
     - m4
-    - perl *
+    - perl 5.*
 
 test:
   commands:
