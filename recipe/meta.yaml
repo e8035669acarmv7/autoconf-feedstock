@@ -16,6 +16,8 @@ source:
 build:
   number: 11
   skip: true  # [win]
+  ignore_run_exports_from:
+    - perl 5.*
 
 requirements:
   build:
