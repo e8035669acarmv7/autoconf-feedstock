@@ -14,8 +14,10 @@ source:
     - 0004-Add-use-lib-.-to-auto-scan-header-.in.patch
 
 build:
-  number: 10
+  number: 11
   skip: true  # [win]
+  ignore_run_exports_from:
+    - perl 5.*
 
 requirements:
   build:
@@ -25,12 +27,12 @@ requirements:
     - curl
   host:
     - m4
-    - perl *
+    - perl 5.*
     #  make check requirement:
     - {{ compiler('c') }}
   run:
     - m4
-    - perl *
+    - perl 5.*
 
 test:
   commands:
