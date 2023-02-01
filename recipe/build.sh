@@ -1,10 +1,7 @@
 #!/bin/sh
 
 pushd build-aux
-  rm config.guess
-  curl -o config.guess 'https://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD'
-  rm config.sub
-  curl -o config.sub 'https://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD'
+  cp ${BUILD_PREFIX}/share/gnuconfig/config.* .
 popd
 
 ./configure --prefix=${PREFIX}        \

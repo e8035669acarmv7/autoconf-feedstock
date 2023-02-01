@@ -19,6 +19,7 @@ build:
 
 requirements:
   build:
+    - gnuconfig
     #  make check requirement:
     - libtool
     - make
