@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -euxo pipefail
 
 pushd build-aux
   cp ${BUILD_PREFIX}/share/gnuconfig/config.* .
