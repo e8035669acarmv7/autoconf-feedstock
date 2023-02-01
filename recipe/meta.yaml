@@ -23,6 +23,7 @@ requirements:
     - libtool
     - make
     - curl
+    - help2man
   host:
     - m4
     - perl 5.*
