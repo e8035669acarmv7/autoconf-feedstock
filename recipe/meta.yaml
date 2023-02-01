@@ -16,6 +16,7 @@ build:
   skip: true  # [win]
   ignore_run_exports_from:
     - perl 5.*
+    - {{ compiler('cxx') }}
 
 requirements:
   build:
@@ -30,6 +31,7 @@ requirements:
     - perl 5.*
     #  make check requirement:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   run:
     - m4
     - perl 5.*
