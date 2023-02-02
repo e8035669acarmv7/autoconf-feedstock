@@ -12,7 +12,7 @@ source:
     - 0002-Add-use-lib-.-to-auto-scan-header-.in.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   ignore_run_exports_from:
     - perl 5.*
@@ -39,6 +39,7 @@ requirements:
 test:
   commands:
     - autoconf --help
+    - autoreconf --help
 
 about:
   home: http://www.gnu.org/software/autoconf/
