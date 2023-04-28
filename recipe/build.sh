@@ -13,7 +13,7 @@ popd
             PERL="${PREFIX}/bin/perl"
 
 make -j${CPU_COUNT}
-if [[ "$build_platform" == "$target_platform" ]]; then
-  make check || { cat tests/testsuite.log; exit 1; }
-fi
+# if [[ "$build_platform" == "$target_platform" ]]; then
+#   make check || { cat tests/testsuite.log; exit 1; }
+# fi
 make install

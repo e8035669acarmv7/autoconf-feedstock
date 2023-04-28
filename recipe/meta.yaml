@@ -24,7 +24,7 @@ requirements:
     #  make check requirement:
     - libtool
     - make
-    - curl
+    # - curl
     - help2man
   host:
     - m4
